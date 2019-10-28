@@ -59,11 +59,10 @@
     			<span id="outputData"></span>
     			<script type="text/javascript">
     				function move() {	
-    					var val;
-    					val = document.getElementById('outputData').innerHTML;
-    					location.href = val;
+    					location.href = document.getElementById('outputData').innerHTML;
     				}
     			</script>
+    			<br><br>
     			<a href="javascript:move()">페이지로 이동</a>
     		</div>
 		</div>
