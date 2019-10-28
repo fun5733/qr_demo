@@ -57,10 +57,14 @@
 			</div>
     		<div id="outputLayer" hidden>
     			<span id="outputData"></span>
-    			$("#outputData").live("click", function() {
-    				var link = $(this).text();
-    				alert(link);
-    			});
+    			<script type="text/javascript">
+    				function move() {	
+    					var val;
+    					val = document.getElementById('outputData').innerHTML;
+    					location.href = val;
+    				}
+    			</script>
+    			<a href="javascript:move()">페이지로 이동</a>
     		</div>
 		</div>
 	</div>
